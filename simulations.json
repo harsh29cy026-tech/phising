@@ -1,0 +1,14 @@
+[
+    [
+  {
+    "simulationId": "SIM-A1B2C3D4",
+    "event": "simulation_started",
+    "timestamp": "2026-10-07T12:00:00.000Z"
+  },
+  {
+    "simulationId": "SIM-A1B2C3D4",
+    "event": "demo_login_attempt",
+    "timestamp": "2026-10-07T12:00:05.000Z"
+  }
+]
+]

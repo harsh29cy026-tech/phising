@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Phishing Awareness Lab</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         EDUCATIONAL SAFETY BANNER
+         ===================================================== -->
+
+    <div class="safety-banner">
+        ⚠️ EDUCATIONAL PHISHING SIMULATION —
+        NOT A REAL INSTAGRAM LOGIN
+    </div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <nav class="navbar">
+
+        <div class="brand">
+            Phishing Awareness Lab
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Simulation</a>
+            <a href="analysis.html">Analysis</a>
+            <a href="quiz.html">Quiz</a>
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main class="container">
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="badge">
+                    CYBERSECURITY EDUCATION
+                </span>
+
+                <h1>
+                    Learn to Identify
+                    <span>Phishing Attacks</span>
+                </h1>
+
+                <p>
+                    This controlled simulation demonstrates how
+                    attackers may imitate familiar login pages
+                    to manipulate users.
+                </p>
+
+                <p>
+                    No real credentials are collected,
+                    transmitted, or stored.
+                </p>
+
+                <button
+                    id="startSimulationBtn"
+                    class="primary-btn"
+                >
+                    Start Safe Simulation
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SAFETY NOTICE
+             ================================================= -->
+
+        <section class="notice">
+
+            <div class="notice-icon">
+                🛡️
+            </div>
+
+            <div>
+
+                <h3>
+                    Safe Academic Demonstration
+                </h3>
+
+                <p>
+                    This website is designed only for cybersecurity
+                    education and phishing-awareness training.
+                    Never enter a real password, OTP, token,
+                    or other sensitive information.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SIMULATION AREA
+             ================================================= -->
+
+        <section
+            id="simulationSection"
+            class="simulation-section"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    STEP 1
+                </span>
+
+                <h2>
+                    Simulated Login Experience
+                </h2>
+
+                <p>
+                    Examine the page carefully before interacting
+                    with the simulated login form.
+                </p>
+
+            </div>
+
+
+            <!-- SIMULATED LOGIN CARD -->
+
+            <div class="login-wrapper">
+
+                <div class="login-card">
+
+                    <!-- Instagram-style text branding -->
+
+                    <div class="instagram-logo">
+                        Instagram
+                    </div>
+
+                    <p class="simulation-label">
+                        SIMULATED LOGIN
+                    </p>
+
+
+                    <!-- =================================================
+                         LOGIN FORM
+                         ================================================= -->
+
+                    <form id="demoLoginForm">
+
+                        <!-- Username-like demo field -->
+
+                        <div class="input-group">
+
+                            <label for="username">
+                                Demo username
+                            </label>
+
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Enter a fictional username"
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PASSWORD-LOOKING FIELD
+
+                             IMPORTANT:
+                             JavaScript NEVER reads this value.
+                             It is NEVER sent to the backend.
+                             ================================================= -->
+
+                        <div class="input-group">
+
+                            <label for="password">
+                                Password-looking field
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Do NOT enter a real password"
+                                autocomplete="off"
+                            >
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="login-btn"
+                        >
+                            Simulate Login
+                        </button>
+
+                    </form>
+
+
+                    <!-- =================================================
+                         DEMO INFORMATION
+                         ================================================= -->
+
+                    <div class="demo-warning">
+
+                        <strong>
+                            🔒 Privacy Protection
+                        </strong>
+
+                        <p>
+                            The password-looking field above is
+                            intentionally ignored by this application.
+                            Its value is never read, transmitted,
+                            logged, or stored.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RESULT SECTION
+                 ================================================= -->
+
+            <div
+                id="simulationResult"
+                class="result-card hidden"
+            >
+
+                <div class="result-icon">
+                    ⚠️
+                </div>
+
+                <h2>
+                    Simulation Complete
+                </h2>
+
+                <p>
+                    This demonstration shows how a convincing
+                    login interface can influence a user's trust.
+                </p>
+
+                <div class="result-grid">
+
+                    <div class="result-item">
+
+                        <span>
+                            Password collected
+                        </span>
+
+                        <strong>
+                            NO
+                        </strong>
+
+                    </div>
+
+                    <div class="result-item">
+
+                        <span>
+                            Password transmitted
+                        </span>
+
+                        <strong>
+                            NO
+                        </strong>
+
+                    </div>
+
+                    <div class="result-item">
+
+                        <span>
+                            Password stored
+                        </span>
+
+                        <strong>
+                            NO
+                        </strong>
+
+                    </div>
+
+                    <div class="result-item">
+
+                        <span>
+                            Simulation event
+                        </span>
+
+                        <strong>
+                            RECORDED
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="next-actions">
+
+                    <a
+                        href="analysis.html"
+                        class="primary-btn"
+                        onclick="viewAnalysis()"
+                    >
+                        Analyze Phishing Indicators
+                    </a>
+
+                    <a
+                        href="quiz.html"
+                        class="secondary-btn"
+                    >
+                        Take Awareness Quiz
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             LEARNING OBJECTIVES
+             ================================================= -->
+
+        <section class="learning-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    WHAT YOU WILL LEARN
+                </span>
+
+                <h2>
+                    Phishing Detection Skills
+                </h2>
+
+            </div>
+
+
+            <div class="learning-grid">
+
+                <div class="learning-card">
+
+                    <div class="card-icon">
+                        🔗
+                    </div>
+
+                    <h3>
+                        Verify URLs
+                    </h3>
+
+                    <p>
+                        Learn how to inspect domains and identify
+                        suspicious links before entering information.
+                    </p>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="card-icon">
+                        🎭
+                    </div>
+
+                    <h3>
+                        Recognize Social Engineering
+                    </h3>
+
+                    <p>
+                        Understand how urgency, fear, authority,
+                        and rewards can manipulate users.
+                    </p>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="card-icon">
+                        🔐
+                    </div>
+
+                    <h3>
+                        Use MFA
+                    </h3>
+
+                    <p>
+                        Understand how multi-factor authentication
+                        can reduce the impact of stolen passwords.
+                    </p>
+
+                </div>
+
+
+                <div class="learning-card">
+
+                    <div class="card-icon">
+                        🛡️
+                    </div>
+
+                    <h3>
+                        Think Before You Click
+                    </h3>
+
+                    <p>
+                        Develop safer browsing and login habits
+                        against phishing attacks.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ETHICAL NOTICE
+             ================================================= -->
+
+        <section class="ethical-section">
+
+            <h2>
+                Ethical Use Notice
+            </h2>
+
+            <p>
+                This project is intended exclusively for academic,
+                cybersecurity-awareness, and controlled laboratory
+                demonstrations.
+            </p>
+
+            <p>
+                Do not use this interface to collect real credentials,
+                impersonate a real service, deploy a phishing campaign,
+                or target real users.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Phishing Awareness Lab
+        </p>
+
+        <p>
+            Educational Cybersecurity Project
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
